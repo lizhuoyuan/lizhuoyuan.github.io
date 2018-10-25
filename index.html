@@ -1,520 +1,372 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>首页_李卓原个人博客 - 一个紧抱谷歌大腿的程序员的个人网站</title>
-    <meta name="keywords" content="个人博客,李卓原个人博客,个人博客模板,李卓原"/>
-    <meta name="description" content="李卓原个人博客，一个紧抱谷歌大腿的程序员的个人网站。"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="src/css/base.css" rel="stylesheet">
-    <link href="src/css/index.css" rel="stylesheet">
-    <link href="src/css/m.css" rel="stylesheet">
-    <script src="src/js/jquery.min.js" type="text/javascript"></script>
-    <script src="src/js/jquery.easyfader.min.js"></script>
-    <script src="src/js/scrollReveal.js"></script>
-    <script src="src/js/common.js"></script>
-    <!--[if lt IE 9]>
-    <script src="src/js/modernizr.js"></script>
-    <![endif]-->
-</head>
-<body>
-<header>
-    <!--menu begin-->
-    <div class="menu">
-        <nav class="nav" id="topnav">
-            <h1 class="logo"><a href="http://lizhuoyuan.github.io">李卓原</a></h1>
-            <li><a href="index.html">网站首页</a></li>
-            <li><a href="src/about.html">关于我</a></li>
-            <li><a href="src/share.html">模板分享</a>
-                <ul class="sub-nav">
-                    <li><a href="src/share.html">个人博客模板</a></li>
-                    <li><a href="src/share.html">国外Html5模板</a></li>
-                    <li><a href="src/share.html">企业网站模板</a></li>
-                </ul>
-            </li>
-            <li><a href="src/list.html">学无止境</a>
-                <ul class="sub-nav">
-                    <li><a href="src/list.html">心得笔记</a></li>
-                    <li><a href="src/list.html">CSS3|Html5</a></li>
-                    <li><a href="src/list.html">网站建设</a></li>
-                    <li><a href="src/list.html">推荐工具</a></li>
-                    <li><a href="src/list.html">JS实例索引</a></li>
-                </ul>
-            </li>
-            <li><a href="src/life.html">慢生活</a>
-                <ul class="sub-nav">
-                    <li><a href="src/life.html">日记</a></li>
-                    <li><a href="src/life.html">欣赏</a></li>
-                    <li><a href="src/life.html">程序人生</a></li>
-                    <li><a href="src/life.html">经典语录</a></li>
-                </ul>
-            </li>
-            <li><a href="src/time.html">时间轴</a></li>
-            <li><a href="src/gbook.html">留言</a></li>
-            <li><a href="src/info.html">内容页</a></li>
-            <!--search begin-->
-            <div id="search_bar" class="search_bar">
-                <form id="searchform" action="[!--news.url--]e/search/index.php" method="post" name="searchform">
-                    <input class="input" placeholder="想搜点什么呢..." type="text" name="keyboard" id="keyboard">
-                    <input type="hidden" name="show" value="title"/>
-                    <input type="hidden" name="tempid" value="1"/>
-                    <input type="hidden" name="tbname" value="news">
-                    <input type="hidden" name="Submit" value="搜索"/>
-                    <span class="search_ico"></span>
-                </form>
-            </div>
-            <!--search end-->
-        </nav>
-    </div>
-    <!--menu end-->
-    <!--mnav begin-->
-    <div id="mnav">
-        <h2><a href="http://lizhuoyuan.github.io" class="mlogo">李卓原博客</a><span class="navicon"></span></h2>
-        <dl class="list_dl">
-            <dt class="list_dt"><a href="index.html">网站首页</a></dt>
-            <dt class="list_dt"><a href="src/about.html">关于我</a></dt>
-            <dt class="list_dt"><a href="#">模板分享</a></dt>
-            <dd class="list_dd">
-                <ul>
-                    <li><a href="src/share.html">个人博客模板</a></li>
-                    <li><a href="src/share.html">国外Html5模板</a></li>
-                    <li><a href="src/share.html">企业网站模板</a></li>
-                </ul>
-            </dd>
-            <dt class="list_dt"><a href="#">学无止境</a></dt>
-            <dd class="list_dd">
-                <ul>
-                    <li><a href="src/list.html">心得笔记</a></li>
-                    <li><a href="src/list.html">CSS3|Html5</a></li>
-                    <li><a href="src/list.html">网站建设</a></li>
-                    <li><a href="src/list.html">推荐工具</a></li>
-                    <li><a href="src/list.html">JS实例索引</a></li>
-                </ul>
-            </dd>
-            <dt class="list_dt"><a href="#">慢生活</a></dt>
-            <dd class="list_dd">
-                <ul>
-                    <li><a href="src/life.html">日记</a></li>
-                    <li><a href="src/life.html">欣赏</a></li>
-                    <li><a href="src/life.html">程序人生</a></li>
-                    <li><a href="src/life.html">经典语录</a></li>
-                </ul>
-            </dd>
-            <dt class="list_dt"><a href="src/time.html">时间轴</a></dt>
-            <dt class="list_dt"><a href="src/gbook.html">留言</a></dt>
-        </dl>
-    </div>
-    <!--mnav end-->
-</header>
-<article>
-    <!--banner begin-->
-    <div class="picsbox">
-        <div class="banner">
-            <div id="banner" class="fader">
-                <li class="slide"><a href="https://blog.csdn.net/u011272795" target="_blank"><img
-                        src="src/images/banner01.jpg"><span class="imginfo">我的CSDN博客!</span></a></li>
-                <li class="slide"><a href="https://github.com/lizhuoyuan" target="_blank"><img
-                        src="src/images/banner02.jpg"><span class="imginfo">我的github</span></a>
-                </li>
-                <li class="slide"><a href="/" target="_blank"><img src="src/images/banner03.jpg"><span class="imginfo">个人博客，属于我的小世界！</span></a>
-                </li>
-                <div class="fader_controls">
-                    <div class="page prev" data-target="prev">&lsaquo;</div>
-                    <div class="page next" data-target="next">&rsaquo;</div>
-                    <ul class="pager_list">
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--banner end-->
-        <div class="toppic">
-            <li><a href="/" target="_blank"> <i><img src="src/images/toppic01.jpg"></i>
-                <h2>别让这些闹心的套路，毁了你的网页设计!</h2>
-                <span>学无止境</span> </a></li>
-            <li><a href="/" target="_blank"> <i><img src="src/images/zd01.jpg"></i>
-                <h2>个人博客，属于我的小世界！</h2>
-                <span>学无止境</span> </a></li>
-        </div>
-    </div>
-    <div class="blank"></div>
-    <!--blogsbox begin-->
-    <div class="blogsbox">
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
-            <span class="blogpic"><a href="/" title=""><img src="src/images/toppic01.jpg" alt=""></a></span>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！... </p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view"><span>34567</span>已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">帝国cms 首页或者列表页 实现图文不同样式调用方法</a></h3>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！...</p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view">4567已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
-            <span class="bplist"><a href="/" title="">
-      <li><img src="src/images/avatar.jpg" alt=""></li>
-      <li><img src="src/images/toppic02.jpg" alt=""></li>
-      <li><img src="src/images/banner01.jpg" alt=""></li>
-      </a></span>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！... </p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view"><span>34567</span>已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
-            <span class="bigpic"><a href="/" title=""><img src="src/images/toppic01.jpg" alt=""></a></span>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！... </p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view"><span>34567</span>已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
-            <span class="blogpic"><a href="/" title=""><img src="src/images/toppic01.jpg" alt=""></a></span>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！... </p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view"><span>34567</span>已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">帝国cms 首页或者列表页 实现图文不同样式调用方法</a></h3>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！...</p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view">4567已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
-            <span class="bplist"><a href="/" title="">
-      <li><img src="src/images/avatar.jpg" alt=""></li>
-      <li><img src="src/images/bi05.jpg" alt=""></li>
-      <li><img src="src/images/banner01.jpg" alt=""></li>
-      </a></span>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！... </p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view"><span>34567</span>已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
-            <span class="blogpic"><a href="/" title=""><img src="src/images/toppic01.jpg" alt=""></a></span>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！... </p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view"><span>34567</span>已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">帝国cms 首页或者列表页 实现图文不同样式调用方法</a></h3>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！...</p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view">4567已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
-            <span class="bplist"><a href="/" title="">
-      <li><img src="src/images/avatar.jpg" alt=""></li>
-      <li><img src="src/images/toppic02.jpg" alt=""></li>
-      <li><img src="src/images/banner01.jpg" alt=""></li>
-      </a></span>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！... </p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view"><span>34567</span>已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
-            <span class="bigpic"><a href="/" title=""><img src="src/images/toppic01.jpg" alt=""></a></span>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！... </p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view"><span>34567</span>已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
-            <span class="blogpic"><a href="/" title=""><img src="src/images/toppic01.jpg" alt=""></a></span>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！... </p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view"><span>34567</span>已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">帝国cms 首页或者列表页 实现图文不同样式调用方法</a></h3>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！...</p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view">4567已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
-            <span class="bplist"><a href="/" title="">
-      <li><img src="src/images/avatar.jpg" alt=""></li>
-      <li><img src="src/images/bi05.jpg" alt=""></li>
-      <li><img src="src/images/banner01.jpg" alt=""></li>
-      </a></span>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！... </p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view"><span>34567</span>已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
-            <span class="bigpic"><a href="/" title=""><img src="src/images/toppic01.jpg" alt=""></a></span>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！... </p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view"><span>34567</span>已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">帝国cms 首页或者列表页 实现图文不同样式调用方法</a></h3>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！...</p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view">4567已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
-            <span class="bplist"><a href="/" title="">
-      <li><img src="src/images/avatar.jpg" alt=""></li>
-      <li><img src="src/images/bi05.jpg" alt=""></li>
-      <li><img src="src/images/banner01.jpg" alt=""></li>
-      </a></span>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！... </p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view"><span>34567</span>已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-        <div class="blogs" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="blogtitle"><a href="/" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
-            <span class="bigpic"><a href="/" title=""><img src="src/images/toppic01.jpg" alt=""></a></span>
-            <p class="blogtext">如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if
-                来判断，输出。思路已打开，样式调用就可以多样化啦！... </p>
-            <div class="bloginfo">
-                <ul>
-                    <li class="author"><a href="/">李卓原</a></li>
-                    <li class="lmname"><a href="/">学无止境</a></li>
-                    <li class="timer">2018-5-13</li>
-                    <li class="view"><span>34567</span>已阅读</li>
-                    <li class="like">9999</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--blogsbox end-->
-    <div class="sidebar">
-        <div class="zhuanti">
-            <h2 class="hometitle">特别推荐</h2>
-            <ul>
-                <li><i><img src="src/images/banner03.jpg"></i>
-                    <p>帝国cms调用方法 <span><a href="/">阅读</a></span></p>
-                </li>
-                <li><i><img src="src/images/b04.jpg"></i>
-                    <p>5.20 我想对你说 <span><a href="/">阅读</a></span></p>
-                </li>
-                <li><i><img src="src/images/b05.jpg"></i>
-                    <p>个人博客，属于我的小世界！ <span><a href="/">阅读</a></span></p>
-                </li>
-            </ul>
-        </div>
-        <div class="tuijian">
-            <h2 class="hometitle">推荐文章</h2>
-            <ul class="tjpic">
-                <i><img src="src/images/toppic01.jpg"></i>
-                <p><a href="/">别让这些闹心的套路，毁了你的网页设计</a></p>
-            </ul>
-            <ul class="sidenews">
-                <li><i><img src="src/images/toppic01.jpg"></i>
-                    <p><a href="/">别让这些闹心的套路，毁了你的网页设计</a></p>
-                    <span>2018-05-13</span></li>
-                <li><i><img src="src/images/toppic02.jpg"></i>
-                    <p><a href="/">给我模板PSD源文件，我给你设计HTML！</a></p>
-                    <span>2018-05-13</span></li>
-                <li><i><img src="src/images/v1.jpg"></i>
-                    <p><a href="/">别让这些闹心的套路，毁了你的网页设计</a></p>
-                    <span>2018-05-13</span></li>
-                <li><i><img src="src/images/v2.jpg"></i>
-                    <p><a href="/">给我模板PSD源文件，我给你设计HTML！</a></p>
-                    <span>2018-05-13</span></li>
-            </ul>
-        </div>
-        <div class="tuijian">
-            <h2 class="hometitle">点击排行</h2>
-            <ul class="tjpic">
-                <i><img src="src/images/toppic01.jpg"></i>
-                <p><a href="/">别让这些闹心的套路，毁了你的网页设计</a></p>
-            </ul>
-            <ul class="sidenews">
-                <li><i><img src="src/images/toppic01.jpg"></i>
-                    <p><a href="/">别让这些闹心的套路</a></p>
-                    <span>2018-05-13</span></li>
-                <li><i><img src="src/images/toppic02.jpg"></i>
-                    <p><a href="/">给我模板PSD源文件，我给你设计HTML！</a></p>
-                    <span>2018-05-13</span></li>
-                <li><i><img src="src/images/v1.jpg"></i>
-                    <p><a href="/">别让这些闹心的套路，毁了你的网页设计</a></p>
-                    <span>2018-05-13</span></li>
-                <li><i><img src="src/images/v2.jpg"></i>
-                    <p><a href="/">给我模板PSD源文件，我给你设计HTML！</a></p>
-                    <span>2018-05-13</span></li>
-            </ul>
-        </div>
-        <div class="cloud">
-            <h2 class="hometitle">标签云</h2>
-            <ul>
-                <a href="/">陌上花开</a> <a href="/">校园生活</a> <a href="/">html5</a> <a href="/">SumSung</a> <a
-                    href="/">青春</a> <a href="/">温暖</a> <a href="/">阳光</a> <a href="/">三星</a><a href="/">索尼</a> <a
-                    href="/">华维荣耀</a> <a href="/">三星</a> <a href="/">索尼</a>
-            </ul>
-        </div>
-        <div class="links">
-            <h2 class="hometitle">友情链接</h2>
-            <ul>
-                <li><a href="http://lizhuoyuan.github.io" target="_blank">李卓原博客</a></li>
-                <li><a href="http://lizhuoyuan.github.io" target="_blank">D设计师博客</a></li>
-                <li><a href="http://lizhuoyuan.github.io" target="_blank">优秀个人博客</a></li>
-            </ul>
-        </div>
-        <div class="guanzhu" id="follow-us">
-            <h2 class="hometitle">关注我们 么么哒！</h2>
-            <ul>
-                <li class="sina"><a href="/" target="_blank"><span>新浪微博</span>李卓原博客</a></li>
-                <li class="tencent"><a href="/" target="_blank"><span>腾讯微博</span>李卓原博客</a></li>
-                <li class="qq"><a href="/" target="_blank"><span>QQ号</span>476847113</a></li>
-                <li class="email"><a href="/" target="_blank"><span>邮箱帐号</span>dancesmiling@qq.com</a></li>
-                <li class="wxgzh"><a href="/" target="_blank"><span>微信号</span>yangqq_1987</a></li>
-                <li class="wx"><img src="src/images/wx.jpg"></li>
-            </ul>
-        </div>
-    </div>
-</article>
-<footer>
-    <p>Design by <a href="http://lizhuoyuan.github.io" target="_blank">李卓原个人博客</a> <a href="/">蜀ICP备11002373号-1</a></p>
-</footer>
-<a href="#" class="cd-top">Top</a>
-</body>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>李卓原个人博客</title>
+	</head>
+
+	<link href="plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link href="logo.ico" rel="shortcut icon" />
+	<script src="plugin/jquery.min.js"></script>
+	<script src="plugin/bootstrap/js/bootstrap.min.js"></script>
+	<!--<script type="text/javascript" src="plugin/jquery.page.js"></script>-->
+	<!--<script src="js/common.js"></script>-->
+	<!--<script src="js/snowy.js"></script>-->
+
+	<body>
+		<div class="w_header">
+			<div class="container">
+				<div class="w_header_top">
+					<a href="#" class="w_logo"></a>
+					<span class="w_header_nav">
+					<ul>
+						<li><a href="" class="active">首页</a></li>
+						<li><a href="about.html">关于</a></li>
+						<li><a href="article.html">成长</a></li>
+						<li><a href="">学习</a></li>
+						<li><a href="">娱乐</a></li>
+						<li><a href="moodList.html">说说</a></li>
+						<li><a href="comment.html">留言</a></li>
+					</ul>
+				</span>
+					<div class="w_search">
+						<div class="w_searchbox">
+							<input type="text" placeholder="search" />
+							<button>搜索</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w_container">
+			<div class="container">
+				<div class="row w_main_row">
+					<div class="col-lg-9 col-md-9 w_main_left">
+						<!--滚动图开始-->
+						<div class="panel panel-default">
+
+							<div id="w_carousel" class="carousel slide w_carousel" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#w_carousel" data-slide-to="0" class="active"></li>
+									<li data-target="#w_carousel" data-slide-to="1"></li>
+									<li data-target="#w_carousel" data-slide-to="2"></li>
+									<li data-target="#w_carousel" data-slide-to="3"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img src="img/slider/slide1.jpg" alt="...">
+										<div class="carousel-caption">
+											<h3>First slide label</h3>
+											<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+										</div>
+									</div>
+									<div class="item">
+										<img src="img/slider/slide2.jpg" alt="...">
+										<div class="carousel-caption">...</div>
+									</div>
+									<div class="item">
+										<img src="img/slider/slide3.jpg" alt="...">
+										<div class="carousel-caption">...</div>
+									</div>
+									<div class="item">
+										<img src="img/slider/slide4.jpg" alt="...">
+										<div class="carousel-caption">...</div>
+									</div>
+								</div>
+
+								<!-- Controls -->
+								<a class="left carousel-control" href="#w_carousel" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#w_carousel" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+
+						</div>
+
+						<div class="panel panel-default contenttop">
+							<a href="article_detail.html">
+								<strong>博主置顶</strong>
+								<h3 class="title">嫁人就嫁程序员</h3>
+								<p class="overView">个人网站正在建设中个人网站正在建设中个人网站正在建设中个人网站正在建设中个人网站正在建设中个人网站正在建设中个人网站正在建设中个人网站正在建设中个人网站正在建设中个人网站正在建设中。。。</p>
+							</a>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">最新发布</h3>
+							</div>
+
+							<div class="panel-body">
+
+								<!--文章列表开始-->
+								<div class="contentList">
+
+									<div class="panel panel-default">
+										<div class="panel-body">
+
+											<h4><a class="title" href="article_detail.html">wfyvv.com</a></h4>
+											<p>
+												<a class="label label-default">UUID</a>
+												<a class="label label-default">java</a>
+											</p>
+											<p class="overView">个人网站正在建设中。。。</p>
+											<p><span class="count"><i class="glyphicon glyphicon-user"></i><a href="#">admin</a></span> <span class="count"><i class="glyphicon glyphicon-eye-open"></i>阅读:666</span><span class="count"><i class="glyphicon glyphicon-comment"></i>评论:18</span><span class="count"><i class="glyphicon glyphicon-time"></i>2017-02-07</span></p>
+
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-body">
+											<div class="contentleft">
+												<h4><a class="title" href="article_detail.html">使用 Nginx 实现 tomcat、glassfish 等 web 服务器负载均衡</a></h4>
+												<p>
+													<a class="label label-default">Nginx</a>
+													<a class="label label-default">tomcat负载均衡</a>
+												</p>
+												<p class="overView">1.web服务器负载均衡简介web服务器负载均衡是指将多台可用单节点服务器组合成web服务器集群，然后通过负载均衡器将客户端请求均匀的转发到不同的单节点web服务器上，从而增加整个web服务器集群的吞吐量。</p>
+												<p><span class="count"><i class="glyphicon glyphicon-user"></i><a href="#">admin</a></span> <span class="count"><i class="glyphicon glyphicon-eye-open"></i>阅读:1003</span><span class="count"><i class="glyphicon glyphicon-comment"></i>评论:2</span><span class="count"><i class="glyphicon glyphicon-time"></i>2017-01-16</span></p>
+											</div>
+											<div class="contentImage">
+												<div class="row">
+													<a href="#" class="thumbnail w_thumbnail">
+														<img src="img/slider/Aj6bieY.jpg" alt="...">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-body">
+
+											<h4><a class="title" href="/post/41501569">32位的UUID生成方法总结</a></h4>
+											<p>
+												<a class="label label-default">UUID</a>
+												<a class="label label-default">java</a>
+											</p>
+											<p class="overView">在学习过程中，我们常常会用到ID，那么有哪些常用的 ID 生成方式，你知道吗？通过 java.util.UUID（终态类）生成</p>
+											<p><span class="count"><i class="glyphicon glyphicon-user"></i><a href="#">admin</a></span> <span class="count"><i class="glyphicon glyphicon-eye-open"></i>阅读:666</span><span class="count"><i class="glyphicon glyphicon-comment"></i>评论:18</span><span class="count"><i class="glyphicon glyphicon-time"></i>2016-12-25</span></p>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-body">
+											<div class="contentleft">
+												<h4><a class="title" href="/post/41501569">Java 工具类--学习篇</a></h4>
+												<p>
+													<a class="label label-default">java</a>
+												</p>
+												<p class="overView">链接一：http://www.open-open.com/lib/view/open1403600391905.html链接二：http://www.360doc.com/content/13/0520/11/1722212_286734557.shtml链接三：https://my.oschina.net/u/1453975/blog/529521链接四：http://blog.csdn.net......</p>
+												<p><span class="count"><i class="glyphicon glyphicon-user"></i><a href="#">admin</a></span> <span class="count"><i class="glyphicon glyphicon-eye-open"></i>阅读:456</span><span class="count"><i class="glyphicon glyphicon-comment"></i>评论:58</span><span class="count"><i class="glyphicon glyphicon-time"></i>2016-10-01</span></p>
+											</div>
+											<div class="contentImage">
+												<!--<img src="img/slider/abs_img_no.jpg"/>-->
+												<div class="row">
+													<a href="#" class="thumbnail w_thumbnail">
+														<img src="img/slider/abs_img_no.jpg" alt="...">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-body">
+											<div class="contentleft">
+												<h4><a class="title" href="/post/41501569">使用 Nginx 实现 tomcat、glassfish 等 web 服务器负载均衡</a></h4>
+												<p>
+													<a class="label label-default">Nginx</a>
+													<a class="label label-default">tomcat负载均衡</a>
+												</p>
+												<p class="overView">1.web服务器负载均衡简介web服务器负载均衡是指将多台可用单节点服务器组合成web服务器集群，然后通过负载均衡器将客户端请求均匀的转发到不同的单节点web服务器上，从而增加整个web服务器集群的吞吐量。</p>
+												<p><span class="count"><i class="glyphicon glyphicon-user"></i><a href="#">admin</a></span> <span class="count"><i class="glyphicon glyphicon-eye-open"></i>阅读:852</span><span class="count"><i class="glyphicon glyphicon-comment"></i>评论:99</span><span class="count"><i class="glyphicon glyphicon-time"></i>2016-08-25</span></p>
+											</div>
+											<div class="contentImage">
+												<!--<img src="img/slider/67zmaej.png"/>-->
+												<div class="row">
+													<a href="#" class="thumbnail w_thumbnail">
+														<img src="img/slider/67zmaej.png" alt="...">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-body">
+											<div class="contentleft">
+												<h4><a class="title" href="/post/41501569">Java 工具类--学习篇</a></h4>
+												<p>
+													<a class="label label-default">java</a>
+												</p>
+												<p class="overView">链接一：http://www.open-open.com/lib/view/open1403600391905.html链接二：http://www.360doc.com/content/13/0520/11/1722212_286734557.shtml链接三：https://my.oschina.net/u/1453975/blog/529521链接四：http://blog.csdn.net......</p>
+												<p><span class="count"><i class="glyphicon glyphicon-user"></i><a href="#">admin</a></span> <span class="count"><i class="glyphicon glyphicon-eye-open"></i>阅读:456</span><span class="count"><i class="glyphicon glyphicon-comment"></i>评论:58</span><span class="count"><i class="glyphicon glyphicon-time"></i>2016-10-01</span></p>
+											</div>
+											<div class="contentImage">
+												<!--<img src="img/slider/abs_img_no.jpg"/>-->
+												<div class="row">
+													<a href="#" class="thumbnail w_thumbnail">
+														<img src="img/slider/abs_img_no.jpg" alt="...">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<!--文章列表结束-->
+
+							</div>
+						</div>
+					</div>
+
+					<!--左侧开始-->
+					<div class="col-lg-3 col-md-3 w_main_right">
+
+						<div class="panel panel-default sitetip">
+							<a href="article_detail.html">
+								<strong>站点公告</strong>
+								<h3 class="title">嫁人就嫁程序员</h3>
+								<p class="overView">个人网站正在建设中个人网站正在建设中个人网站正在建设中个人网站正在建设中个人网站正在建设中个人网站正在建设中个人网站正在建设中个人网站正在建设中个人网站正在建设中个人网站正在建设中。。。</p>
+							</a>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">热门标签</h3>
+							</div>
+							<div class="panel-body">
+								<div class="labelList">
+									<a class="label label-default">java</a>
+									<a class="label label-default">tomcat负载均衡</a>
+									<a class="label label-default">panel</a>
+									<a class="label label-default" href="/tag/jQuery">jQuery</a>
+									<a class="label label-default" href="/tag/jQuery选择器">jQuery选择器</a>
+									<a class="label label-default" href="/tag/linux">linux</a>
+									<a class="label label-default" href="/tag/Nginx">Nginx</a>
+									<a class="label label-default" href="/tag/linux文件类型">linux文件类型</a>
+									<a class="label label-default" href="/tag/chrome请求两次">chrome</a>
+									<a class="label label-default" href="/tag/Redis">Redis</a>
+									<a class="label label-default" href="/tag/spring">spring</a>
+									<a class="label label-default" href="/tag/tomcat">tomcat</a>
+									<a class="label label-default" href="/tag/SyntaxHighlighter">SyntaxHighlighter</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">最新发布</h3>
+							</div>
+							<div class="panel-body">
+								<ul class="list-unstyled sidebar">
+									<li>
+										<a href="/post/04928311">排序算法之冒泡排序 － java实现</a>
+									</li>
+									<li>
+										<a href="/post/32097759">快速搭建基于二进制日志文件的 mysql 复制</a>
+									</li>
+									<li>
+										<a href="/post/09196557">web 服务器负载均衡教程，快速搭建高可用服务器集群</a>
+									</li>
+									<li>
+										<a href="/post/20654391">使用 redis 和 spring-session 实现 tomcat、glassfish 等 web 服务器集群 session 共享</a>
+									</li>
+									<li>
+										<a href="/post/41501569">使用 Nginx 实现 tomcat、glassfish 等 web 服务器负载均衡</a>
+									</li>
+									<li>
+										<a href="/post/89658700">mysql 复制（replication）基础概念和应用场景简介</a>
+									</li>
+									<li>
+										<a href="/post/03088922">redis 单节点在 Linux 生产环境的安装和简单配置</a>
+									</li>
+									<li>
+										<a href="/post/05203355">使用 jQuery 的 val() 方法来获取以及设置表单元素值</a>
+									</li>
+									<li>
+										<a href="/post/03120718">使用 jQuery 的 removeProp() 方法来删除元素的特性（property）</a>
+									</li>
+									<li>
+										<a href="/post/37454977">使用 jQuery 的 prop() 方法来获取以及设置元素的特性（property）</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">友情链接</h3>
+							</div>
+							<div class="panel-body">
+								<div class="newContent">
+									<ul class="list-unstyled sidebar shiplink">
+										<li>
+											<a href="https://www.baidu.com/" target="_blank">百度</a>
+										</li>
+										<li>
+											<a href="https://www.oschina.net/" target="_blank">开源中国</a>
+										</li>
+										<li>
+											<a href="http://www.ulewo.com/" target="_blank">有乐网</a>
+										</li>
+										<li>
+											<a href="http://www.sina.com.cn/" target="_blank">新浪网</a>
+										</li>
+										<li>
+											<a href="http://www.qq.com/" target="_blank">腾讯网</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">关注微信公众号</h3>
+							</div>
+							<div class="panel-body">
+								<img src="img/qrcode.jpg" style="height: 230.5px;width: 230.5px;" />
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w_foot">
+			<div class="w_foot_copyright">Copyright &copy; 2017-2020, www.genban.org. All Rights Reserved. <span>|</span>
+				<a target="_blank" href="http://www.miitbeian.gov.cn/" rel="nofollow">皖ICP备17002922号</a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var $backToTopEle = $('<a href="javascript:void(0)" class="Hui-iconfont toTop" title="返回顶部" alt="返回顶部" style="display:none">^</a>').appendTo($("body")).click(function() {
+			$("html, body").animate({ scrollTop: 0 }, 120);
+		});
+		var backToTopFun = function() {
+			var st = $(document).scrollTop(),
+				winh = $(window).height();
+			(st > 0) ? $backToTopEle.show(): $backToTopEle.hide();
+			/*IE6下的定位*/
+			if(!window.XMLHttpRequest) {
+				$backToTopEle.css("top", st + winh - 166);
+			}
+		};
+
+		$(function() {
+			$(window).on("scroll", backToTopFun);
+			backToTopFun();
+		});
+	</script>
+
 </html>
